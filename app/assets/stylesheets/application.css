@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+div.col1 {
+  display: inline-block;
+  width: 60px;
+}
+div.col2 {
+  display: inline-block;
+  width: 60px;
+}
+div.col3 {
+  display: inline-block;
+  width: 60px;
+}
+div.col4 {
+  display: inline-block;
+  width: 60px;
+}
+.selected {
+  filter:brightness(50%);
+}
+p#left {
+  display:inline;
+}

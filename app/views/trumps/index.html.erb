@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<div>
+  <%= image_tag 'trump/z1.png', :size => "40x60", :class => "selectall" %>
+  <%= image_tag 'selecter/select_under.jpg', :size => "40x60", :class => "unders" %>
+  <%= image_tag 'selecter/select_under.jpg', :size => "40x60", :class => "underc" %>
+  <%= image_tag 'selecter/select_under.jpg', :size => "40x60", :class => "underh" %>
+  <%= image_tag 'selecter/select_under.jpg', :size => "40x60", :class => "underd" %>
+</div>
+<% for i in 1..13 do %>
+<div>
+<%= image_tag 'selecter/select_right.jpg', :size => "40x60", :class => "right"+i.to_s %>
+<%= image_tag 'trump/s'+i.to_s+'.png', :size => "40x60", :class => "col1 raw#{i}" %>
+<%= image_tag 'trump/c'+i.to_s+'.png', :size => "40x60", :class => "col2 raw#{i}" %>
+<%= image_tag 'trump/h'+i.to_s+'.png', :size => "40x60", :class => "col3 raw#{i}" %>
+<%= image_tag 'trump/d'+i.to_s+'.png', :size => "40x60", :class => "col4 raw#{i}" %>
+<span id="r<%=i%>">
+</div>
+<% end %>
+<br>
+<p class="reset">リセット</p>
+残数<p id="left"></p>
